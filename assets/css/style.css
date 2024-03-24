@@ -1,0 +1,231 @@
+@import url("./main.css");
+header {
+  background-color: var(--Header);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0 0 30px 30px;
+  min-height: 100px;
+  max-height: fit-content;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px, rgba(0, 0, 0, 0.14) 0px 2px 4px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.switch > span {
+  position: absolute;
+  top: 14px;
+  pointer-events: none;
+  font-family: "Helvetica", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+  width: 50%;
+  text-align: center;
+}
+
+input.check-toggle-round-flat:checked ~ .off {
+  color: #484a46;
+}
+
+input.check-toggle-round-flat:checked ~ .on {
+  color: #fff;
+}
+
+.switch > span.on {
+  left: 0;
+  padding-left: 2px;
+  color: #484a46;
+}
+
+.switch > span.off {
+  right: 0;
+  padding-right: 4px;
+  color: #fff;
+}
+
+.check-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.check-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input.check-toggle-round-flat + label {
+  padding: 2px;
+  width: 97px;
+  height: 35px;
+  background-color: #484a46;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+}
+input.check-toggle-round-flat + label:before,
+input.check-toggle-round-flat + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+
+input.check-toggle-round-flat + label:before {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background-color: #484a46;
+
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+}
+input.check-toggle-round-flat + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 48px;
+  background-color: #fff;
+  -webkit-border-radius: 52px;
+  -moz-border-radius: 52px;
+  -ms-border-radius: 52px;
+  -o-border-radius: 52px;
+  border-radius: 52px;
+  -webkit-transition: margin 0.2s;
+  -moz-transition: margin 0.2s;
+  -o-transition: margin 0.2s;
+  transition: margin 0.2s;
+}
+
+input.check-toggle-round-flat:checked + label {
+}
+
+input.check-toggle-round-flat:checked + label:after {
+  margin-left: 44px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr auto; /* 1fr for the h1 and auto for the switch */
+  align-items: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-family: "Poppins";
+  margin: 0;
+  text-align: center;
+}
+
+.switch {
+  justify-self: end; /* aligns the switch to the end of its grid cell */
+  display: flex;
+  align-items: center;
+}
+
+.containerMain--presentation {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 20%;
+  gap: 3%;
+  margin-bottom: 30px;
+}
+
+.containerMain--icon,
+.containerMain--icon img {
+  height: 11vh;
+  margin-top: 10px;
+}
+.containerMain--presentation b h1 {
+  font-size: 5.3em;
+  letter-spacing: -4px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+}
+
+.cssanimation,
+.cssanimation span {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.cssanimation span {
+  display: inline-block;
+}
+
+.leRotateYZoomIn span {
+  animation-name: leRotateYZoomIn;
+}
+@keyframes leRotateYZoomIn {
+  from {
+    transform: perspective(600px) translate3d(0, -60px, -2000px) rotateY(75deg);
+    opacity: 0;
+  }
+  5% {
+    transform: perspective(600px) translate3d(0, -60px, -1500px) rotateY(75deg);
+  }
+}
+
+.section__div--containerMain {
+  height: 100%;
+}
+.section--main {
+  height: inherit;
+}
+
+.containerMain--aboutMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerMain--aboutMe div {
+  width: 80%;
+  background: #484a46;
+  border-radius: 14px;
+  text-shadow: rgba(0, 0, 0, 2.12) 0px 0px 2px, rgba(0, 0, 0, 0.14) 0px 2px 4px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 2px, rgba(0, 0, 0, 0.14) 0px 2px 4px;
+}
+.containerMain--aboutMe div p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  line-height: 3.2vh;
+  text-transform: capitalize;
+}
+
+.containerMain--aboutMe div p,
+.containerMain--aboutMe div h1 {
+  margin: 35px;
+}
+
+.div--project {
+  width: 80%;
+}
+.projects {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 40vh;
+  margin-bottom: 30px;
+}
