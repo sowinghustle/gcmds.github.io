@@ -3,8 +3,8 @@
 
 :root {
   --Nav: #5c6f68;
-  --Header: #2f2f2f;
-  --Background: #585b56;
+  --Header: #c48022;
+  --Background: #1e1e24;
 
   --PrimaryButtonColor: #ac80a0;
   --PrimaryButtonHoverColor: #d4a7c8;
@@ -12,7 +12,7 @@
   --InputFocusColor: #f54703;
 
   --FontPrimaryColor: #eff1ed;
-  --FontSecondaryColor: #3c0919;
+  --FontSecondaryColor: #c48022;
 }
 
 * {
@@ -22,10 +22,10 @@
   font-family: inherit;
 }
 
-html,
-body {
-  min-height: 100dvh;
-  font-size: 12px;
+html {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 300px) {
@@ -41,7 +41,9 @@ body {
 }
 
 body {
+  flex-grow: 1;
   color: var(--FontPrimaryColor);
   font-family: "Roboto", system-ui, sans-serif;
   background-color: var(--Background);
+  font-size: 12px;
 }

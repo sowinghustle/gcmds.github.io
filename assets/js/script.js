@@ -6,13 +6,13 @@ window.onload = function() {
 };
 
 function animateSequence() {
-    var a = document.getElementsByClassName('sequence');
-    for (var i = 0; i < a.length; i++) {
-        var $this = a[i];
-        var letter = $this.innerHTML;
+    let a = document.getElementsByClassName('sequence');
+    for (let i = 0; i < a.length; i++) {
+        let $this = a[i];
+        let letter = $this.innerHTML;
         letter = letter.trim();
-        var str = '';
-        var delay = 100;
+        let str = '';
+        let delay = 100;
         for (l = 0; l < letter.length; l++) {
             if (letter[l] != ' ') {
                 str += '<span style="animation-delay:' + delay + 'ms; -moz-animation-delay:' + delay + 'ms; -webkit-animation-delay:' + delay + 'ms; ">' + letter[l] + '</span>';
@@ -25,25 +25,25 @@ function animateSequence() {
 }
 
 function animateRandom() {
-    var a = document.getElementsByClassName('random');
-    for (var i = 0; i < a.length; i++) {
-        var $this = a[i];
-        var letter = $this.innerHTML;
+    let a = document.getElementsByClassName('random');
+    for (let i = 0; i < a.length; i++) {
+        let $this = a[i];
+        let letter = $this.innerHTML;
         letter = letter.trim();
-        var delay = 70;
-        var delayArray = new Array;
-        var randLetter = new Array;
+        let delay = 70;
+        let delayArray = new Array;
+        let randLetter = new Array;
         for (j = 0; j < letter.length; j++) {
             while (1) {
-                var random = getRandomInt(0, (letter.length - 1));
+                let random = getRandomInt(0, (letter.length - 1));
                 if (delayArray.indexOf(random) == -1)
                     break;
             }
             delayArray[j] = random;
         }
         for (l = 0; l < delayArray.length; l++) {
-            var str = '';
-            var index = delayArray[l];
+            let str = '';
+            let index = delayArray[l];
             if (letter[index] != ' ') {
                 str = '<span style="animation-delay:' + delay + 'ms; -moz-animation-delay:' + delay + 'ms; -webkit-animation-delay:' + delay + 'ms; ">' + letter[index] + '</span>';
                 randLetter[index] = str;
@@ -73,3 +73,34 @@ const swiper = new Swiper(".mySwiper", {
 });
 
 
+
+
+
+// Select the images within the project__img container
+const images = document.querySelectorAll('#imgSlide');
+const images2 = document.querySelectorAll('#imgSlide2');
+// Set initial index
+let currentIndex = 0;
+
+function startSlideshow() {
+  // Hide all images
+  images.forEach(img => img.style.display = 'none');
+  images2.forEach(img => img.style.display = 'none');
+  // Show the current image
+  images[currentIndex].style.display = 'block';
+  images2[currentIndex].style.display = 'block';
+  // Increment index for the next image
+  currentIndex++;
+
+  // Check if currentIndex exceeds the number of images
+  if (currentIndex >= images.length || currentIndex >= images2.length) {
+    // If currentIndex exceeds the number of images, reset it to 0
+    currentIndex = 0;
+  }
+  // Call the function recursively after a delay (e.g., 3 seconds)
+  setTimeout(startSlideshow, 5000); // Change 3000 to your desired interval in milliseconds
+}
+
+startSlideshow();
+
+  

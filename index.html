@@ -14,7 +14,7 @@
 
     <header>
         <div>
-            <h1>Meu Portfólio.</h1>
+            <h1 class="title">Meu Portfólio.</h1>
         </div>
         <div class="switch">
             <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
@@ -35,67 +35,154 @@
                 </div>
             </div>
             <div class="containerMain--aboutMe">
-                <div>
-                    <h1>Sobre mim.</h1>
+                <div class="aboutMe__div">
+                    <h1 class="tilt-n-move-shaking">Sobre mim.</h1>
                     <p>
                         Meu nome é Guilherme, tenho 18 anos e sou um aluno da faculdade de tecnologia (Fatec) de
                         Presidente
                         Prudente.
-                        Eu possuo um gosto por front-end, e atuo na área como estagiário em uma empresa que trabalha
-                        fornecendo sistemas à provedores de internet.
+                        Eu possuo um gosto por front-end, e procuro me desenvolver cada vez mais!
                     </p>
                 </div>
             </div>
         </div>
     </section>
     <section class="section--Projects">
-        <div>
-            <h1>Meus Projetos</h1>
-            <div class="projects">
-                <div class="div--project">
-                    <!-- <div class="project__img">
-                        <img src="./assets/img/projeto1.png" alt="projeto1">
-                    </div>
-                    <div class="project__info">
-                        <h1>Projeto 1</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quasi.
-                        </p>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="project__img">
-                        <img src="./assets/img/projeto2.png" alt="projeto2">
-                    </div>
-                    <div class="project__info">
-                        <h1>Projeto 2</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quasi.
-                        </p>
-                    </div>
-                </div> -->
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">Slide 1</div>
-                            <div class="swiper-slide">Slide 2</div>
-                            <div class="swiper-slide">Slide 3</div>
-                            <div class="swiper-slide">Slide 4</div>
-                            <div class="swiper-slide">Slide 5</div>
-                            <div class="swiper-slide">Slide 6</div>
-                            <div class="swiper-slide">Slide 7</div>
-                            <div class="swiper-slide">Slide 8</div>
-                            <div class="swiper-slide">Slide 9</div>
+
+        <h1 id="projetos" class="tilt-n-move-shaking">Meus Projetos</h1>
+        <div class="projects">
+            <div class="div--project">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="div__projectContent">
+                                <div class="project__img">
+                                    <img src="./assets/img/wany.png" class="slides" id="imgSlide"
+                                        alt="Imagem da home do sistema">
+                                    <img src="./assets/img/wany2.png" class="slides" id="imgSlide"
+                                        alt="Imagem da tela de Login">
+                                    <img src="./assets/img/wany3.png" class="slides" id="imgSlide"
+                                        alt="Imagem da página de perfil">
+                                </div>
+                                <div class="project__info">
+                                    <h1 class="project-title">Wany</h1>
+                                    <p>
+                                        Site onde desenvolvedores indies podem publicar seus jogos que estarão
+                                        acessíveis a outros usuários.
+                                        Participei no desenvolvimento e fiquei responsável por grande parte das decisões
+                                        visuais e o front-end de algumas páginas.
+                                    </p>
+                                    <a href="https://github.com/Wany-Studios/Wany" target="_blank"><button
+                                            class="projectButton">Acessar</button></a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide">
+                            <div>
+                                <div class="project__img">
+                                    <img src="./assets/img/starwars.png" alt="Imagem da Home do sistema">
+                                </div>
+                                <div class="project__info">
+                                    <h1 class="project-title">Site SWAPI</h1>
+                                    <p>
+                                        Site simples de consumo de API do SWAPI (The Star Wars API) com uma apresentação
+                                        front-end usando vanilla CSS e com PHP trabalhandon no back-end.
+                                    </p>
+                                    <a href="https://github.com/sowinghustle/Site-Star-Wars.git" target="_blank"><button
+                                            class="projectButton">Acessar</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <div class="project__img">
+                                    <div class="imgTemplate"></div>
+                                </div>
+                                <div class="project__info">
+                                    <h1 class="project-title">Calculadora em React</h1>
+                                    <p>
+                                        Um projeto simples de construção de uma calculadora utilizando a biblioteca
+                                        front-end JS -
+                                        React e css vanilla.
+                                    </p>
+                                    <a href="https://github.com/sowinghustle/calculadora-em-react"
+                                        target="_blank"><button class="projectButton">Acessar</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <div class="project__img">
+                                    <img src="./assets/img/gameMaker1.png" class="slides" id="imgSlide2"
+                                        alt="Imagem do primeiro jogo">
+                                    <img src="./assets/img/gameMaker2.png" class="slides" id="imgSlide2"
+                                        alt="Imagem do segundo jogo">
+                                </div>
+                                <div class="project__info">
+                                    <h1 class="project-title">Jogos RPG Maker</h1>
+                                    <p>
+                                        Alguns jogos feitos na Engine de desenvolvimento de jogos 'GameMaker Studio 2'
+                                        enquanto eu a estudava.
+                                        Todos sprites também foram feitos por mim, utilizando o
+                                        software Aseprite.
+                                    </p>
+                                    <a href="https://github.com/sowinghustle/Jogos-GameMaker" target="_blank"><button
+                                            class="projectButton">Acessar</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <div class="project__img">
+                                    <img src="./assets/img/programaCsharp.png" class="slides" alt="Imagem do sistema">
+                                </div>
+                                <div class="project__info">
+                                    <h1 class="project-title">Programa Login e Cadastro C#</h1>
+                                    <p>
+                                        Programa simples de login e cadastro de usuários com conexão a banco de dados,
+                                        feito em C# utilizando windows
+                                        form.
+                                    </p>
+                                    <a href="https://github.com/sowinghustle/Programa-C-sharp-Login-e-cadastro"
+                                        target="_blank"><button class="projectButton">Acessar</button></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
             </div>
+        </div>
     </section>
-    <div class="github-card" data-user="lepture"></div>
-    <script src="https://cdn.jsdelivr.net/gh/lepture/github-cards@latest/jsdelivr/widget.js"></script>
-
+    <section id="contato">
+        <div class="section__div--containerMain">
+            <div class="containerMain--presentation">
+                <b>
+                    <h1 class="cssanimation sequence leRotateYZoomIn">Minhas plataformas!</h1>
+                </b>
+            </div>
+            <div class="containerMain--aboutMe">
+                <div class="aboutMe__div">
+                    <h1>Contato</h1>
+                    <p class="contact-platforms">
+                        Você pode entrar em contato comigo através do meu e-mail: <a class="link email"
+                            href="mailto:guilhermemaia_1404@hotmail.com"><img
+                                src="https://camo.githubusercontent.com/0087e4d96b5510787161df3843b869025dd63c38f0df1d3a1811b363fe08c054/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f476d61696c2d4431343833363f7374796c653d666f722d7468652d6261646765266c6f676f3d476d61696c266c6f676f436f6c6f723d7768697465"
+                                alt="gmail"
+                                data-canonical-src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&amp;logo=Gmail&amp;logoColor=white"
+                                style="max-width: 100%;height: 7vh;border-radius: 4px;"></a>
+                    </p>
+                    <p class="contact-platforms">
+                        Ou outras plataformas de contato!
+                        <a class="link" href="https://br.linkedin.com/in/guilherme-c-4653b0241/pt">Linkedln</a>
+                        <a class="link" href="https://twitter.com/fishsql">Twitter</a>
+                        <a class="link" href="https://www.instagram.com/guilherme.cmds/">Instagram</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
