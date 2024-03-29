@@ -14,7 +14,7 @@
 
     <header>
         <div>
-            <h1 class="title">Meu Portfólio.</h1>
+            <h1 class="title dynamic-content" data-key="portfolio_title">Meu Portfólio.</h1>
         </div>
         <div class="switch">
             <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
@@ -28,7 +28,8 @@
         <div class="section__div--containerMain">
             <div class="containerMain--presentation">
                 <b>
-                    <h1 class="cssanimation sequence leRotateYZoomIn">Olá!</h1>
+                    <h1 class="cssanimation sequence leRotateYZoomIn dynamic-content" data-key="main_section_hello">Olá!
+                    </h1>
                 </b>
                 <div class="containerMain--icon">
                     <img src="./assets/img/happy-ezgif.com-speed.gif" alt="ghost gif">
@@ -36,8 +37,8 @@
             </div>
             <div class="containerMain--aboutMe">
                 <div class="aboutMe__div">
-                    <h1 class="tilt-n-move-shaking">Sobre mim.</h1>
-                    <p>
+                    <h1 class="tilt-n-move-shaking dynamic-content" data-key="main_section_about_me">Sobre mim.</h1>
+                    <p class="dynamic-content" data-key="main_section_about_me_description">
                         Meu nome é Guilherme, tenho 18 anos e sou um aluno da faculdade de tecnologia (Fatec) de
                         Presidente
                         Prudente.
@@ -49,7 +50,8 @@
     </section>
     <section class="section--Projects">
 
-        <h1 id="projetos" class="tilt-n-move-shaking">Meus Projetos</h1>
+        <h1 id="projetos" class="tilt-n-move-shaking dynamic-content" data-key="projects_section_title">Meus Projetos
+        </h1>
         <div class="projects">
             <div class="div--project">
                 <div class="swiper mySwiper">
@@ -65,15 +67,16 @@
                                         alt="Imagem da página de perfil">
                                 </div>
                                 <div class="project__info">
-                                    <h1 class="project-title">Wany</h1>
-                                    <p>
+                                    <h1 class="project-title dynamic-content">Wany</h1>
+                                    <p class="dynamic-content" data-key="project1_description">
                                         Site onde desenvolvedores indies podem publicar seus jogos que estarão
                                         acessíveis a outros usuários.
                                         Participei no desenvolvimento e fiquei responsável por grande parte das decisões
                                         visuais e o front-end de algumas páginas.
                                     </p>
                                     <a href="https://github.com/Wany-Studios/Wany" target="_blank"><button
-                                            class="projectButton">Acessar</button></a>
+                                            class="projectButton dynamic-content"
+                                            data-key="button_acess">Acessar</button></a>
                                 </div>
                             </div>
                         </div>
@@ -83,13 +86,14 @@
                                     <img src="./assets/img/starwars.png" alt="Imagem da Home do sistema">
                                 </div>
                                 <div class="project__info">
-                                    <h1 class="project-title">Site SWAPI</h1>
-                                    <p>
+                                    <h1 class="project-title dynamic-content">Site SWAPI</h1>
+                                    <p class="dynamic-content" data-key="project2_description">
                                         Site simples de consumo de API do SWAPI (The Star Wars API) com uma apresentação
                                         front-end usando vanilla CSS e com PHP trabalhandon no back-end.
                                     </p>
                                     <a href="https://github.com/sowinghustle/Site-Star-Wars.git" target="_blank"><button
-                                            class="projectButton">Acessar</button></a>
+                                            class="projectButton dynamic-content"
+                                            data-key="button_acess">Acessar</button></a>
                                 </div>
                             </div>
                         </div>
@@ -99,14 +103,16 @@
                                     <div class="imgTemplate"></div>
                                 </div>
                                 <div class="project__info">
-                                    <h1 class="project-title">Calculadora em React</h1>
-                                    <p>
+                                    <h1 class="project-title dynamic-content" data-key="project3_title">Calculadora em
+                                        React</h1>
+                                    <p class="dynamic-content" data-key="project3_description">
                                         Um projeto simples de construção de uma calculadora utilizando a biblioteca
                                         front-end JS -
                                         React e css vanilla.
                                     </p>
                                     <a href="https://github.com/sowinghustle/calculadora-em-react"
-                                        target="_blank"><button class="projectButton">Acessar</button></a>
+                                        target="_blank"><button class="projectButton dynamic-content"
+                                            data-key="button_acess">Acessar</button></a>
                                 </div>
                             </div>
                         </div>
@@ -119,15 +125,17 @@
                                         alt="Imagem do segundo jogo">
                                 </div>
                                 <div class="project__info">
-                                    <h1 class="project-title">Jogos RPG Maker</h1>
-                                    <p>
+                                    <h1 class="project-title dynamic-content" data-key="project4_title">Jogos RPG Maker
+                                    </h1>
+                                    <p class="dynamic-content" data-key="project4_description">
                                         Alguns jogos feitos na Engine de desenvolvimento de jogos 'GameMaker Studio 2'
                                         enquanto eu a estudava.
                                         Todos sprites também foram feitos por mim, utilizando o
                                         software Aseprite.
                                     </p>
                                     <a href="https://github.com/sowinghustle/Jogos-GameMaker" target="_blank"><button
-                                            class="projectButton">Acessar</button></a>
+                                            class="projectButton dynamic-content"
+                                            data-key="button_acess">Acessar</button></a>
                                 </div>
                             </div>
                         </div>
@@ -137,14 +145,17 @@
                                     <img src="./assets/img/programaCsharp.png" class="slides" alt="Imagem do sistema">
                                 </div>
                                 <div class="project__info">
-                                    <h1 class="project-title">Programa Login e Cadastro C#</h1>
-                                    <p>
+                                    <h1 class="project-title dynamic-content" data-key="project5_title">Programa Login e
+                                        Cadastro C#
+                                    </h1>
+                                    <p class="dynamic-content" data-key="project5_description">
                                         Programa simples de login e cadastro de usuários com conexão a banco de dados,
                                         feito em C# utilizando windows
                                         form.
                                     </p>
                                     <a href="https://github.com/sowinghustle/Programa-C-sharp-Login-e-cadastro"
-                                        target="_blank"><button class="projectButton">Acessar</button></a>
+                                        target="_blank"><button class="projectButton dynamic-content"
+                                            data-key="button_acess">Acessar</button></a>
                                 </div>
                             </div>
                         </div>
@@ -159,14 +170,17 @@
         <div class="section__div--containerMain">
             <div class="containerMain--presentation">
                 <b>
-                    <h1 class="cssanimation sequence leRotateYZoomIn">Minhas plataformas!</h1>
+                    <h1 class="cssanimation sequence leRotateYZoomIn dynamic-content" data-key="contact_section_title">
+                        Minhas plataformas!
+                    </h1>
                 </b>
             </div>
             <div class="containerMain--aboutMe">
                 <div class="aboutMe__div">
-                    <h1>Contato</h1>
+                    <h1 class="dynamic-content" data-key="contact_section_subtitle">Contato</h1>
                     <p class="contact-platforms">
-                        Você pode entrar em contato comigo através do meu e-mail: <a class="link email"
+                        <a class="dynamic-content" data-key="contact_section_email"> Você pode entrar em contato comigo
+                            através do meu e-mail:</a> <a class="link email"
                             href="mailto:guilhermemaia_1404@hotmail.com"><img
                                 src="https://camo.githubusercontent.com/0087e4d96b5510787161df3843b869025dd63c38f0df1d3a1811b363fe08c054/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f476d61696c2d4431343833363f7374796c653d666f722d7468652d6261646765266c6f676f3d476d61696c266c6f676f436f6c6f723d7768697465"
                                 alt="gmail"
@@ -174,7 +188,8 @@
                                 style="max-width: 100%;height: 7vh;border-radius: 4px;"></a>
                     </p>
                     <p class="contact-platforms">
-                        Ou outras plataformas de contato!
+                        <a class="dynamic-content" data-key="contact_other_platforms">Ou outras plataformas de
+                            contato!</a>
                         <a class="link" href="https://br.linkedin.com/in/guilherme-c-4653b0241/pt">Linkedln</a>
                         <a class="link" href="https://twitter.com/fishsql">Twitter</a>
                         <a class="link" href="https://www.instagram.com/guilherme.cmds/">Instagram</a>
@@ -185,6 +200,7 @@
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/language.js"></script>
 </body>
 
 </html>
