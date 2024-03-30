@@ -28,6 +28,15 @@ html {
   flex-direction: column;
 }
 
+body {
+  flex-grow: 1;
+  color: var(--FontPrimaryColor);
+  font-family: "Roboto", "Poppins", "Atkinson Hyperlegible", "Work Sans",
+    sans-serif;
+  background-color: var(--Background);
+  font-size: 12px;
+}
+
 @media (min-width: 300px) {
   html {
     font-size: 14px;
@@ -38,12 +47,4 @@ html {
   html {
     font-size: 16px;
   }
-}
-
-body {
-  flex-grow: 1;
-  color: var(--FontPrimaryColor);
-  font-family: "Roboto", system-ui, sans-serif;
-  background-color: var(--Background);
-  font-size: 12px;
 }
