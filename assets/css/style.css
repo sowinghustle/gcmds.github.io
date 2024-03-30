@@ -125,23 +125,46 @@ input.check-toggle-round-flat:checked + label:after {
   margin-left: 44px;
 }
 
-header {
+.header-title {
+  width: 100%;
   display: grid;
-  grid-template-columns: 1fr auto; /* 1fr for the h1 and auto for the switch */
+  grid-template-columns: 1fr auto; /* Define duas colunas, uma com largura flexível e outra com largura automática */
   align-items: center;
-  padding: 20px;
+  height: 70px;
+  padding: 0 30px;
 }
 
 header h1 {
   font-family: "Poppins";
-  margin: 0;
-  text-align: center;
+  margin: 0 auto; /* Centraliza horizontalmente o h1 dentro da .header-title */
 }
 
 .switch {
-  justify-self: end; /* aligns the switch to the end of its grid cell */
   display: flex;
   align-items: center;
+}
+
+.ul-content {
+  margin: 10px 0;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+ul li {
+  margin-right: 20px;
+}
+
+li a {
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: 700;
+  color: #444542;
+}
+li a:hover {
+  color: var(--FontPrimaryColor);
 }
 
 .containerMain--presentation {

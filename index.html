@@ -13,18 +13,27 @@
 <body>
 
     <header>
-        <div>
-            <h1 class="title dynamic-content" data-key="portfolio_title">Meu Portfólio.</h1>
+        <div class="header-title">
+            <div>
+                <h1 class="title dynamic-content" data-key="portfolio_title">Meu Portfólio.</h1>
+            </div>
+            <div class="switch">
+                <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+                <label for="language-toggle"></label>
+                <span class="on">PT</span>
+                <span class="off">EN</span>
+            </div>
         </div>
-        <div class="switch">
-            <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
-            <label for="language-toggle"></label>
-            <span class="on">PT</span>
-            <span class="off">EN</span>
+        <div class="ul-content">
+            <ul>
+                <li><a href="#sobre" class="dynamic-content" data-key="portfolio_about">Sobre</a></li>
+                <li><a href="#projetos" class="dynamic-content" data-key="portfolio_projects">Projetos</a></li>
+                <li><a href="#contato" class="dynamic-content" data-key="contact_section_subtitle">Contato</a></li>
+            </ul>
         </div>
     </header>
 
-    <section class="section--main">
+    <section id="sobre" class="section--main">
         <div class="section__div--containerMain">
             <div class="containerMain--presentation">
                 <b>
@@ -48,9 +57,9 @@
             </div>
         </div>
     </section>
-    <section class="section--Projects">
+    <section id="projetos" class="section--Projects">
 
-        <h1 id="projetos" class="tilt-n-move-shaking dynamic-content" data-key="projects_section_title">Meus Projetos
+        <h1 class="tilt-n-move-shaking dynamic-content" data-key="projects_section_title">Meus Projetos
         </h1>
         <div class="projects">
             <div class="div--project">
@@ -168,16 +177,11 @@
     </section>
     <section id="contato">
         <div class="section__div--containerMain">
-            <div class="containerMain--presentation">
-                <b>
-                    <h1 class="cssanimation sequence leRotateYZoomIn dynamic-content" data-key="contact_section_title">
-                        Minhas plataformas!
-                    </h1>
-                </b>
-            </div>
             <div class="containerMain--aboutMe">
                 <div class="aboutMe__div">
-                    <h1 class="dynamic-content" data-key="contact_section_subtitle">Contato</h1>
+                    <h1 class="tilt-n-move-shaking dynamic-content" data-key="contact_section_title">Minhas
+                        plataformas!
+                    </h1>
                     <p class="contact-platforms">
                         <a class="dynamic-content" data-key="contact_section_email"> Você pode entrar em contato comigo
                             através do meu e-mail:</a> <a class="link email"

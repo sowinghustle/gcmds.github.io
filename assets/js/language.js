@@ -3,6 +3,8 @@ var languageStrings = {
     'PT': {
         'portfolio_title': 'Meu Portfólio.',
         'main_section_hello': 'Olá!',
+        'portfolio_about': 'Sobre',
+        'portfolio_projects': 'Projetos',
         'main_section_about_me': 'Sobre mim.',
         'main_section_about_me_description': 'Meu nome é Guilherme, tenho 18 anos e sou um aluno da faculdade de tecnologia (Fatec) de Presidente Prudente. Eu possuo um gosto por front-end, e procuro me desenvolver cada vez mais!',
         'projects_section_title': 'Meus Projetos',
@@ -29,6 +31,8 @@ var languageStrings = {
         'portfolio_title': 'My Portfolio.',
         'main_section_hello': 'Hello!',
         'main_section_about_me': 'About Me.',
+        'portfolio_about': 'About',
+        'portfolio_projects': 'Projects',
         'main_section_about_me_description': 'My name is Guilherme, I am 18 years old and I am a student at the technology college (Fatec) of Presidente Prudente. I have a taste for front-end, and I seek to develop myself more and more!',
         'projects_section_title': 'My Projects',
         'project1_title': 'Wany',
@@ -45,7 +49,7 @@ var languageStrings = {
         'contact_section_title': 'My plataforms!',
         'contact_section_subtitle': 'Contact',
         'contact_section_email': 'You can contact me through my email:',
-        'contact_other_platforms': 'Or other platforms you can contact me!',
+        'contact_other_platforms': 'Or you can hit me up on some of my other platforms!',
         'contact_section_linkedln': 'Linkedln',
         'contact_section_twitter': 'Twitter',
         'contact_section_instagram': 'Instagram'
