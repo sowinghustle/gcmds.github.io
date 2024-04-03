@@ -26,6 +26,8 @@ html {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  font-size: clamp(35px, 6vw, 45px);
+  line-height: clamp(35px, 6vw, 45px);
 }
 
 body {

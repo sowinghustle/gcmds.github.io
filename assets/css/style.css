@@ -26,6 +26,7 @@ header {
 }
 
 .switch > span {
+  line-height: 0rem;
   position: absolute;
   top: 14px;
   pointer-events: none;
@@ -251,7 +252,6 @@ li a:hover {
   font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: 1.5px;
-  line-height: 3.8vh;
   text-transform: capitalize;
 }
 
@@ -309,9 +309,8 @@ li a:hover {
 
 .project__info p {
   margin-bottom: 10px;
-  font-size: 0.9em;
+  font-size: 1.4em;
   text-align: justify;
-  line-height: 1.7rem;
   width: 50%;
 }
 
