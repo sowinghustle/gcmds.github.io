@@ -1,10 +1,9 @@
 @import url("./main.css");
 h1 {
-  font-size: 4em;
+  font-size: 1.4em;
   color: var(--FontSecondaryColor);
 }
 .title {
-  font-size: 2.4em;
   color: var(--FontPrimaryColor);
 }
 header {
@@ -133,6 +132,7 @@ input.check-toggle-round-flat:checked + label:after {
   align-items: center;
   height: 70px;
   padding: 0 30px;
+  margin-bottom: clamp(0.2%, 0.5%, 10px);
 }
 
 header h1 {
@@ -160,7 +160,6 @@ ul li {
 
 li a {
   text-decoration: none;
-  font-size: 2em;
   font-weight: 700;
   color: #444542;
 }
@@ -180,11 +179,10 @@ li a:hover {
 
 .containerMain--icon,
 .containerMain--icon img {
-  height: 11vh;
   margin-top: 10px;
 }
 .containerMain--presentation b h1 {
-  font-size: 5.3em;
+  font-size: 2.3em;
   letter-spacing: -4px;
   font-weight: 700;
   text-align: center;
@@ -240,16 +238,13 @@ li a:hover {
 .containerMain--aboutMe .aboutMe__div {
   min-height: 70%;
   text-shadow: rgba(0, 0, 0, 2.12) 0px 0px 2px, rgba(0, 0, 0, 0.14) 0px 2px 4px;
-  background: linear-gradient(
-    180deg,
-    rgb(34, 34, 39) 1%,
-    rgb(72, 74, 70) 80%,
-    rgb(34, 34, 39) 99%
-  );
+  background: linear-gradient( 180deg, rgb(30, 30, 36) 0.7%, rgb(72, 74, 70) 80%, rgb(30, 30, 36) 99% );
   width: 100%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.9px);
+  -webkit-backdrop-filter: blur(6.9px);
 }
 .containerMain--aboutMe .aboutMe__div p {
-  font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: 1.5px;
   text-transform: capitalize;
@@ -309,9 +304,9 @@ li a:hover {
 
 .project__info p {
   margin-bottom: 10px;
-  font-size: 1.4em;
+  font-size: 0.9em;
   text-align: justify;
-  width: 50%;
+  width: 70%;
 }
 
 .projectButton {
@@ -323,19 +318,24 @@ li a:hover {
   cursor: pointer;
   max-width: 312px;
   min-width: 200px;
+  color: var(--Background);
+  font-weight: 500;
+  transition: ease-in-out 0.2s;
 }
 
 .projectButton:hover {
   background-color: #e3962a;
+  color: var(--FontPrimaryColor);
 }
 
-.project-title {
-  font-size: 3em;
-}
 
 .link {
   color: var(--FontSecondaryColor);
   text-decoration: none;
+}
+
+.div__h1--tilt {
+  overflow: hidden;
 }
 
 .tilt-n-move-shaking {
@@ -357,9 +357,7 @@ li a:hover {
 }
 
 @media screen and (max-width: 500px) {
-  .containerMain--aboutMe .aboutMe__div p {
-    font-size: 1.5rem;
-  }
+
   .project__info p {
     width: 100%;
   }
