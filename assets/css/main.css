@@ -38,7 +38,7 @@ html {
   display: flex;
   flex-direction: column;
   font-size: var(--size-2);
-  /* line-height: clamp(35px, 6vw, 45px); */
+  line-height: clamp(35px, 6vw, 45px);
 }
 
 body {
@@ -48,6 +48,26 @@ body {
     system-ui;
   background-color: var(--Background);
   /* font-size: 12px; */
+}
+
+@supports (scrollbar-color: auto) {
+  .scrollbox {
+    scrollbar-color: aquamarine cornflowerblue;
+  }
+}
+
+
+body::-webkit-scrollbar {
+  width: 0.2em;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+background-color: darkgrey;
+outline: 1px solid slategrey;
 }
 
 /* @media (min-width: 300px) {

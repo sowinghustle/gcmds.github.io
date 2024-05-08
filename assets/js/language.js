@@ -41,7 +41,7 @@ var languageStrings = {
     portfolio_about: "About",
     portfolio_projects: "Projects",
     main_section_about_me_description:
-      "My name is Guilherme, I am 18 years old and I am a student at the technology college (Fatec) of Presidente Prudente. I have a taste for front-end, and I seek to develop myself more and more!",
+      "My name is Guilherme, I am a 19 years old student at the technology college (Fatec) of Presidente Prudente. I have a taste for front-end, and I seek to develop myself more and more!",
     projects_section_title: "My Projects",
     project1_title: "Wany",
     project1_description:
